@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Obtiene la ruta actual relativa al proyecto (elimina el prefijo del proyecto)
     const currentPath = window.location.pathname.replace("/proyecto-holistica", "");
-    console.log(currentPath);
     
 
     links.forEach((link) => {
