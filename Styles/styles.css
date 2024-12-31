@@ -194,6 +194,9 @@
     max-width: 100%;
     margin-bottom: 5rem;
 }
+.card2 {
+    flex-direction: row-reverse;
+}
 .card1 .foto {
     width: 100%;
     max-width: 540px;
