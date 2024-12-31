@@ -64,10 +64,6 @@
     border: none;
 }
 
-.container {
-    /* overflow-x: hidden !important; */
-}
-
 
 /*      texto de bienvenida      */
 .bienvenida {
@@ -76,12 +72,13 @@
     font-family: Bitter, serif;
     /* overflow-y: hidden !important; */
     width: 100%;
+    margin: 3rem 0;
 }
 .bienvenida p {
     width: 100%;
     font-weight: 500;
     font-size: 22px;
-    text-align: end;
+    text-align: center;
 }
 
 
@@ -93,7 +90,7 @@
     background-image: url(../Images/logo.jpg);
     background-attachment: fixed;
     background-position: 50% 0%;
-    /* box-shadow: 0 1px 12px black; */
+    box-shadow: 0 1px 12px black;
 }
 .video-banner h1 {
     position: absolute;
@@ -293,11 +290,13 @@
 
 
 
-[data-aos="anim-fade"] {
+[data-aos="anim-fade-down"] {
     opacity: 0;
-    transition-property: opacity;
+    transform: translateY(-8px);
+    transition-property: transform, opacity;
 
     &.aos-animate {
         opacity: 1;
+        transform: translateX(0);
     }
 }
