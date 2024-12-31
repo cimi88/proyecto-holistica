@@ -1,6 +1,6 @@
 .body {
-    /* background-color: #e91e6205; */
     background-image: linear-gradient(to bottom, #e91e6222, #e91e6200);
+    background: url("../Images/noise.png");
     color: #222;
     overflow-x: hidden;
 }
@@ -91,6 +91,8 @@
     background-attachment: fixed;
     background-position: 50% 0%;
     box-shadow: 0 1px 12px black;
+    z-index: 1;
+    overflow-y: hidden;
 }
 .video-banner h1 {
     position: absolute;
@@ -103,8 +105,8 @@
     text-shadow: 0px 0px 12px #fff;
     animation: animTitulo 14s ease forwards;
     animation-delay: 1s;
-    z-index: 3;
     opacity: 0;
+    z-index: 1111;
 }
 .video-banner .portada {
     position: absolute;
@@ -114,11 +116,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     object-fit: scale-down;
     filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, .5));
     animation: animPortada 10s ease 4s forwards;
     opacity: 0;
+    z-index: 111;
 }
 .video-banner .sombreado {
     position: absolute;
@@ -128,7 +130,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 11;
 }
 .video-banner video {
     width: 100%;
@@ -137,7 +139,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    box-shadow: 0px 0px 78px 26px rgb(216, 152, 190);
+    z-index: 11;
 }
 @keyframes animTitulo {
     0% {
