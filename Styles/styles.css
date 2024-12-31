@@ -212,8 +212,8 @@
     width: 100%;
     max-width: 540px;
     padding: 1px;
-    padding-left: 8px;
-    background-image: linear-gradient(to right,#e91e63, #e7e7e700);
+    padding-right: 8px;
+    background-image: linear-gradient(to left,#e91e63, #e7e7e700);
 }
 .card2,
 .card2 .foto {
@@ -251,7 +251,7 @@
 .card2 p {
     padding-right: 2rem;
     text-align: end;
-    /* width: 50%; */
+    width: 50%;
 }
 .card1 p,
 .card2 p,
@@ -284,6 +284,7 @@
         text-align: center;
         padding-right: 4rem;
         padding-left: 4rem;
+        width: 100%;
     }
 }
 
