@@ -1,6 +1,7 @@
 .body {
     background-color: #fff;
     color: #222;
+    overflow-x: hidden;
 }
 
 
@@ -63,14 +64,21 @@
     border: none;
 }
 
-
+.container {
+    /* overflow-x: hidden !important; */
+}
 
 
 /*      texto de bienvenida      */
 .bienvenida {
+    display: flex;
+    flex-direction: column;
     font-family: Bitter, serif;
+    /* overflow-y: hidden !important; */
+    width: 100%;
 }
 .bienvenida p {
+    width: 100%;
     font-weight: 500;
     font-size: 22px;
     text-align: end;
@@ -179,12 +187,14 @@
 
 
 /*      card (foto-texto)      */
-.card1 {
+.card1,
+.card2,
+.card3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 5rem;
 }
 .card1 .foto {
@@ -194,20 +204,8 @@
     padding-left: 8px;
     background-image: linear-gradient(to right,#e91e63, #e7e7e700);
 }
-.card1,
-.card1 .foto {
-    border-radius: 0 8px 8px 0;
-}
 
 
-.card2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 5rem;
-}
 .card2 .foto {
     width: 100%;
     max-width: 540px;
@@ -215,20 +213,8 @@
     padding-right: 8px;
     background-image: linear-gradient(to left,#e91e63, #e7e7e700);
 }
-.card2,
-.card2 .foto {
-    border-radius: 0 8px 8px 0;
-}
 
 
-.card3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 5rem;
-}
 .card3 .foto {
     width: 100%;
     max-width: 540px;
@@ -257,6 +243,15 @@
 .card2 p,
 .card3 p {
     font-size: 28px;
+}
+
+.card1, .card3,
+.card1 .foto, .card3 .foto {
+    border-radius: 0 8px 8px 0;
+}
+.card2,
+.card2 .foto {
+    border-radius: 8px 0 0 8px;
 }
 
 @media (max-width: 320px) {
@@ -293,5 +288,16 @@
     .card2 p,
     .card3 p  {
         font-size: 125%;
+    }
+}
+
+
+
+[data-aos="anim-fade"] {
+    opacity: 0;
+    transition-property: opacity;
+
+    &.aos-animate {
+        opacity: 1;
     }
 }

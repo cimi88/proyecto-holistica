@@ -17,6 +17,11 @@
             @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
         </style>
+
+        <!-- Animate on Scroll -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        
     </head>
     
     <body class="body">
@@ -81,21 +86,31 @@
         </div>
 
         <!-- contenedor principal -->
-        <section class="container my-5">
-            <div class="bienvenida mx-0 mx-sm-5">
-                <p>UN LUGAR DONDE SE ENSEÑA A HACER EL BIEN Y A HACERLO BIEN</p>
-                <p>DONDE IRSE SIN DOLOR ES POSIBLE.</p>
+        <section class="container container-fluid mx-0">
+            <div class="bienvenida mx-0">
+                <p 
+                data-aos="anim-fade"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                >
+                UN LUGAR DONDE SE ENSEÑA A HACER EL BIEN Y A HACERLO BIEN</p>
+                <p
+                    data-aos="anim-fade"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease"
+                >
+                DONDE IRSE SIN DOLOR ES POSIBLE.</p>
             </div>
         </section>
 
-        <div class="card1">
+        <div class="card1 mx-4">
             <img class="foto" src="./Fotos/foto-cursos1.jpg" alt="foto cursos">
             <p>
                 <strong class="negrita">Curos de capacitación online</strong><br>
                 Carreras - Cursos - Talleres
             </p>
         </div>
-        <div class="card2">
+        <div class="card2 mx-4">
             <img class="foto" src="./Fotos/foto-cursos2.jpg" alt="foto cursos">
             <p>
                 <strong class="negrita">Atención en Consultorio</strong><br>
@@ -103,7 +118,7 @@
                 Magnetoterapia - Fibromialgia - Frtritis - Frtrosis - Osteoporosis - Escoliosis - Lumbalgia - Hombro Doloroso - Hernias de Disco - Trocanteritis - Pre y Post Quirúrgicos
             </p>
         </div>
-        <div class="card3">
+        <div class="card3 mx-4">
             <img class="foto" src="./Fotos/foto-cursos4.jpg" alt="foto cursos">
             <p>
                 <strong class="negrita">Nueva Dirección</strong><br>
@@ -118,3 +133,6 @@
     </body>
     
 </html>
+
+
+        

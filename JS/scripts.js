@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Obtiene la ruta actual relativa al proyecto (elimina el prefijo del proyecto)
     const currentPath = window.location.pathname.replace("/proyecto-holistica", "");
-    
 
     links.forEach((link) => {
         // Convierte el atributo 'href' del enlace en una ruta absoluta relativa al documento actual
@@ -19,5 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
             link.classList.add("active"); // Agrega la clase active al enlace correspondiente
             link.appendChild(borderDiv);
         }
+    });
+
+    // Inicializacion AOS
+    AOS.init({
+        duration: 1200,
     });
 });
