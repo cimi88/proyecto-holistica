@@ -27,11 +27,14 @@
     <body class="body">
         
         <!-- navbar -->
+
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top"> <!-- propiedades del navbar -->
             
-            <div class="container-fluid"> <!-- propiedades para el contenido del navbar -->
-                
-                <a class="navbar-brand" href="./index.html"> <!-- logo y titulo -->
+            <!-- propiedades para el contenido del navbar -->
+            <div class="container-fluid">
+
+                <!-- logo y titulo -->
+                <a class="navbar-brand" href="./index.html">
                     <img src="./Images/logo-manosdevida.jpg" alt="Logo" title="Ser en tu existencia" width="45" class="logo d-inline-block align-middle rounded-circle shadow-sm img-fluid" />
                     <span class="text-white">Manos de Vida</span>
                 </a>
@@ -41,7 +44,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav"> <!-- 'collapse navbar-collapse' hace al nav colapsable -->
+                <!-- 'collapse navbar-collapse' hace al nav colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
                     <!-- lista de lnks -->
                     <ul class="navbar-nav d-flex justify-content-end w-100">
                         <li class="nav-item">
@@ -50,9 +55,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./Pages/talleres y cursos.html">Talleres y Cursos</a>
                         </li>
-                        
-                        <!-- menu desplegable con más link -->
-                        <div class="dropdown">
+
+                        <!-- menu desplegable con sedes -->
+                        <li class="nav-item dropdown">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Sedes
                             </button>
@@ -61,7 +66,7 @@
                                 <li class="nav-item"><a class="dropdown-item" href="#">Centro 2</a></li>
                                 <li class="nav-item"><a class="dropdown-item" href="#">Centro 3</a></li>
                             </ul>
-                        </div>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./Pages/quien soy.html">Quien soy</a>
@@ -70,13 +75,15 @@
                             <a class="nav-link" aria-current="page" href="./Pages/contactame.html">Contactame</a>
                         </li>
                     </ul>
+
                 </div>
+
             </div>
 
         </nav>
 
-        <!-- contenido principal de la pagina -->
-        
+        <!-- main -->
+
         <!-- video banner -->
         <div class="video-banner">
             <h1>BIENVENIDOS</h1>
@@ -105,14 +112,15 @@
 
         <div class="card1 mx-4">
             <img
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-left"
                 data-aos-duration="700"
                 
-                class="foto" src="./Fotos/foto-cursos1.jpg" alt="foto cursos">
+                class="foto" src="./Fotos/foto-cursos1.jpg" alt="foto cursos"
+            >
             <p
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-left"
                 data-aos-duration="700"
-                data-aos-delay="100"
+                data-aos-delay="200"
             >
                 <strong class="negrita">Curos de capacitación online</strong><br>
                 Carreras - Cursos - Talleres
@@ -120,14 +128,14 @@
         </div>
         <div class="card2 mx-4">
             <img
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-right"
                 data-aos-duration="700"
                 
                 class="foto" src="./Fotos/foto-cursos2.jpg" alt="foto cursos">
             <p
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-right"
                 data-aos-duration="700"
-                data-aos-delay="100"
+                data-aos-delay="200"
             >
                 <strong class="negrita">Atención en Consultorio</strong><br>
                 Especialista en Columna - Cervicales - Rodilla y Ciático 
@@ -136,14 +144,14 @@
         </div>
         <div class="card3 mx-4">
             <img
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-left"
                 data-aos-duration="700"
                 
                 class="foto" src="./Fotos/foto-cursos4.jpg" alt="foto cursos">
             <p
-                data-aos="anim-fade-down"
+                data-aos="anim-fade-left"
                 data-aos-duration="700"
-                data-aos-delay="100"
+                data-aos-delay="200"
             >
                 <strong class="negrita">Nueva Dirección</strong><br>
                 Ayacucho 3702 - entre 14 de Julio y 20 de Septiembre

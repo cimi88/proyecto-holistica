@@ -206,30 +206,20 @@
 .card2 {
     flex-direction: row-reverse;
 }
-.card1 .foto {
-    width: 100%;
-    max-width: 540px;
-    padding: 1px;
-    padding-left: 8px;
-    background-image: linear-gradient(to right,#e91e63, #e7e7e700);
-}
-
-
-.card2 .foto {
-    width: 100%;
-    max-width: 540px;
-    padding: 1px;
-    padding-right: 8px;
-    background-image: linear-gradient(to left,#e91e63, #e7e7e700);
-}
-
-
+.card1 .foto,
 .card3 .foto {
     width: 100%;
     max-width: 540px;
     padding: 1px;
     padding-left: 8px;
     background-image: linear-gradient(to right,#e91e63, #e7e7e700);
+}
+.card2 .foto {
+    width: 100%;
+    max-width: 540px;
+    padding: 1px;
+    padding-right: 8px;
+    background-image: linear-gradient(to left,#e91e63, #e7e7e700);
 }
 
 .card1,
@@ -305,6 +295,27 @@
 [data-aos="anim-fade-down"] {
     opacity: 0;
     transform: translateY(-8px);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="anim-fade-left"] {
+    opacity: 0;
+    transform: translateX(-16px);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+[data-aos="anim-fade-right"] {
+    opacity: 0;
+    transform: translateX(16px);
     transition-property: transform, opacity;
 
     &.aos-animate {
