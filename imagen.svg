@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="926" height="717" viewBox="0 0 926 717">
-    <filter id="shadow">
-        <feDropShadow dx="4" dy="4" stdDeviation="4" flood-color="rgba(0,0,0,0.5)" />
-    </filter>
-    <image id="Capa_1" data-name="Capa 1" x="60" y="16" width="801" height="680" 
-        xlink:href="logo2.png"
-        filter="url(#shadow)" />
-</svg>
