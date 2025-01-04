@@ -28,13 +28,13 @@
         
         <!-- navbar -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top"> <!-- propiedades del navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top"> <!-- propiedades del navbar -->
             
             <!-- propiedades para el contenido del navbar -->
             <div class="container-fluid">
 
                 <!-- logo y titulo -->
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="#portada">
                     <img src="./Images/logo-manosdevida.jpg" alt="Logo" title="Ser en tu existencia" width="45" class="logo d-inline-block align-middle rounded-circle shadow-sm img-fluid" />
                     <span class="text-white">Manos de Vida</span>
                 </a>
@@ -47,10 +47,10 @@
                 <!-- 'collapse navbar-collapse' hace al nav colapsable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     
-                    <!-- lista de lnks -->
+                    <!-- lista de links -->
                     <ul class="navbar-nav d-flex justify-content-end w-100">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./Pages/talleres y cursos.html">Talleres y Cursos</a>
@@ -83,80 +83,84 @@
         </nav>
 
         <!-- main -->
+        <main>
+            <!-- video banner -->
+            <div id="portada" class="video-banner">
+                <h1>BIENVENIDOS</h1>
+                <img class="portada" src="./Images/logo2.png" alt="portada">
+                <video class="object-fit-cover" src="./Videos/animacion-mdv1.mp4" autoplay loop muted></video>
+                <div class="sombreado"></div>
+            </div>
 
-        <!-- video banner -->
-        <div class="video-banner">
-            <h1>BIENVENIDOS</h1>
-            <img class="portada" src="./Images/logo2.png" alt="portada">
-            <video class="object-fit-cover" src="./Videos/animacion-mdv1.mp4" autoplay loop muted></video>
-            <div class="sombreado"></div>
-        </div>
-
-        <!-- contenedor principal -->
-        <section class="container container-fluid mx-auto">
-            <div class="bienvenida">
-                <p 
-                data-aos="anim-fade-down"
-                data-aos-duration="750"
-                data-aos-delay="100"
-                >
-                UN LUGAR DONDE SE ENSEÑA A HACER EL BIEN Y A HACERLO BIEN</p>
-                <p
+            <!-- contenedor principal -->
+            <section class="container container-fluid mx-auto" id="inicio">
+                <div class="bienvenida">
+                    <p 
                     data-aos="anim-fade-down"
                     data-aos-duration="750"
-                    data-aos-delay="20"
-                >
-                DONDE IRSE SIN DOLOR ES POSIBLE.</p>
-            </div>
-        </section>
+                    data-aos-delay="100"
+                    >
+                    UN LUGAR DONDE SE ENSEÑA A HACER EL BIEN Y A HACERLO BIEN</p>
+                    <p  style="margin-top: 5rem;"
+                        data-aos="anim-fade-down"
+                        data-aos-duration="750"
+                        data-aos-delay="20"
+                    >
+                    DONDE IRSE SIN DOLOR ES POSIBLE.</p>
+                </div>
+            </section>
 
-        <div class="card1 mx-4">
-            <img
-                data-aos="anim-fade-left"
-                data-aos-duration="700"
-                
-                class="foto" src="./Fotos/foto-cursos1.jpg" alt="foto cursos"
-            >
-            <p
-                data-aos="anim-fade-left"
-                data-aos-duration="700"
-                data-aos-delay="200"
-            >
-                <strong class="negrita">Curos de capacitación online</strong><br>
-                Carreras - Cursos - Talleres
-            </p>
-        </div>
-        <div class="card2 mx-4">
-            <img
-                data-aos="anim-fade-right"
-                data-aos-duration="700"
-                
-                class="foto" src="./Fotos/foto-cursos2.jpg" alt="foto cursos">
-            <p
-                data-aos="anim-fade-right"
-                data-aos-duration="700"
-                data-aos-delay="200"
-            >
-                <strong class="negrita">Atención en Consultorio</strong><br>
-                Especialista en Columna - Cervicales - Rodilla y Ciático 
-                Magnetoterapia - Fibromialgia - Frtritis - Frtrosis - Osteoporosis - Escoliosis - Lumbalgia - Hombro Doloroso - Hernias de Disco - Trocanteritis - Pre y Post Quirúrgicos
-            </p>
-        </div>
-        <div class="card3 mx-4">
-            <img
-                data-aos="anim-fade-left"
-                data-aos-duration="700"
-                
-                class="foto" src="./Fotos/foto-cursos4.jpg" alt="foto cursos">
-            <p
-                data-aos="anim-fade-left"
-                data-aos-duration="700"
-                data-aos-delay="200"
-            >
-                <strong class="negrita">Nueva Dirección</strong><br>
-                Ayacucho 3702 - entre 14 de Julio y 20 de Septiembre
-            </p>
-        </div>
+            <section class="container container-fluid mx-auto">
+                <div class="card1 mx-4">
+                    <img
+                        data-aos="anim-fade-left"
+                        data-aos-duration="700"
+                        
+                        class="foto" src="./Fotos/foto-cursos1.jpg" alt="foto cursos"
+                    >
+                    <p
+                        data-aos="anim-fade-left"
+                        data-aos-duration="700"
+                        data-aos-delay="200"
+                    >
+                        <strong class="negrita">Curos de capacitación online</strong><br>
+                        Carreras - Cursos - Talleres
+                    </p>
+                </div>
+                <div class="card2 mx-4">
+                    <img
+                        data-aos="anim-fade-right"
+                        data-aos-duration="700"
+                        
+                        class="foto" src="./Fotos/foto-cursos2.jpg" alt="foto cursos">
+                    <p
+                        data-aos="anim-fade-right"
+                        data-aos-duration="700"
+                        data-aos-delay="200"
+                    >
+                        <strong class="negrita">Atención en Consultorio</strong><br>
+                        Especialista en Columna - Cervicales - Rodilla y Ciático 
+                        Magnetoterapia - Fibromialgia - Frtritis - Frtrosis - Osteoporosis - Escoliosis - Lumbalgia - Hombro Doloroso - Hernias de Disco - Trocanteritis - Pre y Post Quirúrgicos
+                    </p>
+                </div>
+                <div class="card3 mx-4">
+                    <img
+                        data-aos="anim-fade-left"
+                        data-aos-duration="700"
+                        
+                        class="foto" src="./Fotos/foto-cursos4.jpg" alt="foto cursos">
+                    <p
+                        data-aos="anim-fade-left"
+                        data-aos-duration="700"
+                        data-aos-delay="200"
+                    >
+                        <strong class="negrita">Nueva Dirección</strong><br>
+                        Ayacucho 3702 - entre 14 de Julio y 20 de Septiembre
+                    </p>
+                </div>
+            </section>
+
+        </main>
 
         <!-- scritps -->
         <script src="./JS/scripts.js"></script>
