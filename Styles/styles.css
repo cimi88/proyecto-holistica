@@ -298,8 +298,6 @@
     }
 }
 
-
-
 [data-aos="anim-fade-down"] {
     opacity: 0;
     transform: translateY(-8px);
@@ -329,5 +327,97 @@
     &.aos-animate {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+
+
+
+/* Talleres y Cursos */
+#talleresYCursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 8rem; */
+    /* border: 1px solid black; */
+}
+
+#talleresYCursos .card {
+    display: flex;
+    margin-bottom: 12rem;
+    text-align: center;
+    height: 540px;
+    max-width: 100%;
+    overflow: hidden;
+    border: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#talleresYCursos .card .carousel {
+    max-width: 540px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    
+    margin-bottom: .5rem !important;
+}
+
+#talleresYCursos .card .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#talleresYCursos .card .carousel .carousel-inner .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#talleresYCursos .card .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: animCarousel 10s linear infinite;
+}
+
+#talleresYCursos .card .card-body {
+    overflow-y: auto;
+}
+
+#talleresYCursos .card .card-body .card-text {
+    margin-top: 3rem;
+}
+#talleresYCursos ul {
+    padding-left: 0 !important;
+}
+#talleresYCursos li {
+    list-style: none;
+}
+
+@keyframes animCarousel {
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+
+@media (min-width: 992px) {
+    #talleresYCursos .card {
+        flex-direction: row;
+        text-align: start;
+    }
+}
+
+@media (min-width: 576px) {
+    #talleresYCursos .carousel {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    #talleresYCursos .carousel {
+        max-width: auto;
     }
 }
