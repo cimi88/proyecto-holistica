@@ -342,10 +342,6 @@
     justify-content: center;
 }
 
-#talleresYCursos .card .card-img {
-    animation: animImg 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-}
-
 #talleresYCursos .card-body-description ul li {
     list-style: none;
 }
@@ -407,6 +403,16 @@
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card {
     width: 90%;
     max-width: 640px !important;
+    height: 450px;
+}
+#talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont {
+    background-color: #e91e63;
+    height: 100%;
+}
+#talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont .card-img {
+    animation: animImg 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    object-fit: cover;
+    height: 100%;
 }
 
 #talleresYCursos .slider .carousel button {
