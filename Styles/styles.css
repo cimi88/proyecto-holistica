@@ -4,7 +4,11 @@
     color: #222;
     overflow-x: hidden;
 }
-
+.body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -358,7 +362,7 @@
     text-align: center;
     border: 0px !important;
     border-bottom: 1px solid #fff !important;
-    width: 50% !important;
+    width: 60% !important;
     margin: 8px 0;
     margin-bottom: 8px;
 }
@@ -406,7 +410,7 @@
     height: 450px;
 }
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont {
-    background-color: #e91e63;
+    background-color: rgb(126, 150, 126);
     height: 100%;
 }
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont .card-img {
