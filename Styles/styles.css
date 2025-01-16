@@ -1,13 +1,19 @@
+* {
+    box-sizing: border-box !important;
+}
 .body {
     background-image: linear-gradient(to bottom, #e91e6222, #e91e6200);
     background: url("../Images/noise.png");
     color: #222;
     overflow-x: hidden;
 }
+
 .body main {
+    /* border: 3px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: aqua; */
 }
 
 
@@ -17,17 +23,21 @@
     background-color: #e91e63;
     font-family: Montserrat, sans-serif;
 }
+
 .navbar .nav-link {
     color: #fff !important;
     transition: 0.3s ease-in-out;
 }
+
 .navbar .nav-link .borde {
     border: 1px solid #fff;
     width: 100%;
 }
+
 .navbar .navbar-toggler {
     border: none;
 }
+
 .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -44,34 +54,43 @@
     border: none;
     padding-top: 8px !important;
 }
+
 .navbar-collapse .dropdown .btn {
     padding-left: 0;
     padding-right: 0;
 }
+
 .navbar-collapse ul li {
     width: fit-content;
 }
+
 .navbar .dropdown .btn,
 .navbar .dropdown-item {
     color: #fff !important;
 }
+
 .navbar .dropdown .dropdown-item:hover {
     background-color: #ec3270;
 }
+
 .navbar .dropdown .dropdown-menu {
     background-color: #e91e63;
     border: none;
 }
+
 @media (min-width: 768px) {
     .dropdown-menu .nav-item {
         width: fit-content;
     }
 }
+
 @media (min-width: 992px) {
     .navbar-collapse .dropdown .btn {
-        padding-left: 0.75rem; /* valor por defecto de Bootstrap */
+        padding-left: 0.75rem;
+        /* valor por defecto de Bootstrap */
         padding-right: 0.75rem;
     }
+
     .dropdown-menu .nav-item {
         width: 100%;
     }
@@ -86,6 +105,7 @@
     width: 100%;
     margin: 12rem 0;
 }
+
 .bienvenida p {
     width: 100%;
     font-weight: 500;
@@ -106,6 +126,7 @@
     z-index: 1;
     overflow-y: hidden;
 }
+
 .video-banner h1 {
     position: absolute;
     left: 50%;
@@ -120,6 +141,7 @@
     opacity: 0;
     z-index: 1111;
 }
+
 .video-banner .portada {
     position: absolute;
     width: 100%;
@@ -134,6 +156,7 @@
     opacity: 0;
     z-index: 111;
 }
+
 .video-banner .sombreado {
     position: absolute;
     width: 100%;
@@ -144,6 +167,7 @@
     background: rgba(0, 0, 0, 0.3);
     z-index: 11;
 }
+
 .video-banner video {
     width: 100%;
     height: 100%;
@@ -154,41 +178,50 @@
     box-shadow: 0px 0px 78px 26px rgb(216, 152, 190);
     z-index: 11;
 }
+
 @keyframes animTitulo {
     0% {
         opacity: 0;
     }
+
     20% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1.1);
     }
+
     40% {
         opacity: 0;
     }
 }
+
 @keyframes animPortada {
     0% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.9);
     }
+
     80% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
+
     100% {
         opacity: 1;
     }
 }
+
 @media (min-width: 992px) {
     .video-banner video {
         max-width: 1040px;
     }
 }
+
 @media (max-width: 992px) {
     .video-banner video {
         max-width: 100%;
     }
 }
+
 @media (max-width: 512px) {
     .video-banner .portada {
         max-width: 512px;
@@ -208,30 +241,35 @@
     align-items: center;
     max-width: 100%;
 }
+
 .card1 {
     margin-top: 8rem;
 }
+
 .card2,
 .card3 {
     margin: 14rem 0;
 }
+
 .card2 {
     flex-direction: row-reverse;
 }
+
 .card1 .foto,
 .card3 .foto {
     width: 100%;
     max-width: 540px;
     padding: 1px;
     padding-left: 8px;
-    background-image: linear-gradient(to right,#e91e63, #e7e7e700);
+    background-image: linear-gradient(to right, #e91e63, #e7e7e700);
 }
+
 .card2 .foto {
     width: 100%;
     max-width: 540px;
     padding: 1px;
     padding-right: 8px;
-    background-image: linear-gradient(to left,#e91e63, #e7e7e700);
+    background-image: linear-gradient(to left, #e91e63, #e7e7e700);
 }
 
 .card1,
@@ -245,21 +283,26 @@
     padding-left: 2rem;
     text-align: start;
 }
+
 .card2 p {
     padding-right: 2rem;
     text-align: end;
     width: 50%;
 }
+
 .card1 p,
 .card2 p,
 .card3 p {
     font-size: 28px;
 }
 
-.card1, .card3,
-.card1 .foto, .card3 .foto {
+.card1,
+.card3,
+.card1 .foto,
+.card3 .foto {
     border-radius: 0 8px 8px 0;
 }
+
 .card2,
 .card2 .foto {
     border-radius: 8px 0 0 8px;
@@ -270,22 +313,29 @@
         padding: 0 !important;
     }
 }
+
 @media (max-width: 768px) {
-    .card1, .card2, .card3 {
+
+    .card1,
+    .card2,
+    .card3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .card1 .foto,
     .card2 .foto,
     .card3 .foto {
         margin-bottom: 1rem;
     }
+
     .card1 p,
     .card3 p {
         text-align: center;
         padding: 0;
     }
+
     .card2 p {
         text-align: center;
         padding-right: 4rem;
@@ -295,9 +345,10 @@
 }
 
 @media (max-width: 992px) {
+
     .card1 p,
     .card2 p,
-    .card3 p  {
+    .card3 p {
         font-size: 125%;
     }
 }
@@ -323,6 +374,7 @@
         transform: translateX(0);
     }
 }
+
 [data-aos="anim-fade-right"] {
     opacity: 0;
     transform: translateX(16px);
@@ -349,6 +401,7 @@
 #talleresYCursos .card-body-description ul li {
     list-style: none;
 }
+
 #talleresYCursos .card-body-description {
     padding: 0 16px;
 }
@@ -358,6 +411,7 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+
 #talleresYCursos .card-body hr {
     text-align: center;
     border: 0px !important;
@@ -374,10 +428,12 @@
 }
 
 @media (max-width: 768px) {
+
     #talleresYCursos .card-body-description,
     #talleresYCursos .card-body-description h5 {
         font-size: clamp(.9rem, 1vw, 1rem);
     }
+
     #talleresYCursos .card-body h2 {
         font-size: clamp(1rem, 3.4vw, 1.75rem);
     }
@@ -391,12 +447,14 @@
     justify-content: center;
     /* background-color: #c749bd; */
 }
+
 #talleresYCursos .slider .carousel.slide {
     box-sizing: border-box;
     padding: 0 16px;
     min-width: fit-content;
     max-width: 640px;
 }
+
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item {
     display: flex;
     flex-direction: column;
@@ -404,15 +462,18 @@
     align-items: center;
     width: 100%;
 }
+
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card {
     width: 90%;
     max-width: 640px !important;
     height: 450px;
 }
+
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont {
     background-color: rgb(126, 150, 126);
     height: 100%;
 }
+
 #talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont .card-img {
     animation: animImg 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
     object-fit: cover;
@@ -426,4 +487,65 @@
     height: fit-content;
     border-radius: 100px;
     color: #000 !important;
+}
+
+
+
+/* Contacto */
+#contactame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 0 16px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+#contactame h5 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+#contactame .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 16px 0;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #ff006a1e;
+}
+.formulario * {
+    border: none;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+.formulario *:focus-visible {
+    outline: none;
+    box-shadow: 0px 4px 6px #a86d868b;
+}
+.formulario input,
+.formulario textarea {
+    box-shadow: 0px 0px 3px #a86d86;
+}
+.formulario #button {
+    border: 1px solid #ef9bbe;
+    background-color: #ef9bbe;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #00000092;
+    box-shadow: 0px 0px 1px #a86d86;
+}
+.formulario #button:hover {
+    text-shadow: 0px 1px 2px #000;
+    box-shadow: 0px 1px 2px 1px #a86d86;
 }
