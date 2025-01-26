@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box !important;
 }
+
 .body {
     background-image: linear-gradient(to bottom, #e91e6222, #e91e6200);
     background: url("../Images/noise.png");
@@ -12,8 +13,7 @@
     /* border: 3px solid black; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* background-color: aqua; */
+    /* border: 4px solid; */
 }
 
 
@@ -232,6 +232,11 @@
 
 
 /*      Inicio: card (foto-texto)      */
+
+#inicio {
+    min-width: 100%;
+}
+
 .card1,
 .card2,
 .card3 {
@@ -243,12 +248,12 @@
 }
 
 .card1 {
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
 }
 
 .card2,
 .card3 {
-    margin: 14rem 0;
+    margin: 4rem 0;
 }
 
 .card2 {
@@ -394,99 +399,97 @@
 #talleresYCursos {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+}
+
+#talleresYCursos .card-curso > * {
+    /* border: 1px solid #0004ff; */
+}
+
+#talleresYCursos .card-curso {
+    display: flex;
+    width: 80%;
+    height: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 8px 8px 0;
+
+    /* border: 1px solid #000; */
+}
+
+#talleresYCursos .card-curso .img-cont {
+    height: 100%;
+    flex: 1;
+}
+#talleresYCursos .card-curso .img-cont .foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1px 0 1px 8px;
+    border-radius: 0 8px 8px 0;
+    background-image: linear-gradient(to right, #e91e63, #e7e7e700);
+}
+
+#talleresYCursos .card-curso .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+    flex: 1.2;
+    overflow-y: auto;
+
+    /* border: 1px solid red; */
 }
 
-#talleresYCursos .card-body-description ul li {
+#talleresYCursos .card-curso .card-body > * {
+
+    /* border: 1px solid red; */
+}
+
+#talleresYCursos .card-body .card-body-description {
+    box-sizing: border-box;
+    margin: 0 4% 2%;
+}
+
+#talleresYCursos .card-body .card-body-description ul li {
     list-style: none;
-}
-
-#talleresYCursos .card-body-description {
-    padding: 0 16px;
 }
 
 #talleresYCursos .card-body h2 {
     text-align: center;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 #talleresYCursos .card-body hr {
     text-align: center;
     border: 0px !important;
-    border-bottom: 1px solid #fff !important;
+    border-bottom: 1px solid #000000 !important;
     width: 60% !important;
     margin: 8px 0;
     margin-bottom: 8px;
 }
 
-@keyframes animImg {
-    50% {
-        transform: scale(1.05);
-    }
-}
-
 @media (max-width: 768px) {
-
-    #talleresYCursos .card-body-description,
-    #talleresYCursos .card-body-description h5 {
-        font-size: clamp(.9rem, 1vw, 1rem);
-    }
-
-    #talleresYCursos .card-body h2 {
-        font-size: clamp(1rem, 3.4vw, 1.75rem);
+    #talleresYCursos .card-body .card-body-description {
+        width: 90%;
     }
 }
 
-#talleresYCursos .slider {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #c749bd; */
-}
-
-#talleresYCursos .slider .carousel.slide {
-    box-sizing: border-box;
-    padding: 0 16px;
-    min-width: fit-content;
-    max-width: 640px;
-}
-
-#talleresYCursos .slider .carousel .carousel-inner .carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#talleresYCursos .slider .carousel .carousel-inner .carousel-item .card {
-    width: 90%;
-    max-width: 640px !important;
-    height: 450px;
-}
-
-#talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont {
-    background-color: rgb(126, 150, 126);
-    height: 100%;
-}
-
-#talleresYCursos .slider .carousel .carousel-inner .carousel-item .card .card-img-cont .card-img {
-    animation: animImg 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    object-fit: cover;
-    height: 100%;
-}
-
-#talleresYCursos .slider .carousel button {
-    margin: auto;
-    padding: 0 4px;
-    width: auto;
-    height: fit-content;
-    border-radius: 100px;
-    color: #000 !important;
+@media (max-width: 425px) {
+    #talleresYCursos .card-curso {
+        flex-direction: column;
+        height: 800px;
+        border-radius: 0 0 8px 8px;
+    }
+    #talleresYCursos .card-curso .img-cont .foto {
+        padding: 8px 1px 0 1px;
+        border-radius: 0 0 8px 8px;
+        background-image: linear-gradient(to bottom, #e91e63, #e7e7e700);
+    }
 }
 
 
