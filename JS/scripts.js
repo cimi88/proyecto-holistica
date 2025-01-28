@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault(); // Evita el comportamiento por defecto del enlace
@@ -12,6 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: targetElement.offsetTop - navbarHeight, // Ajustamos el desplazamiento
                 behavior: "smooth", // Scroll suave
             });
+        });
+
+        // Al pasar el mouse sobre el enlace
+        anchor.addEventListener("mouseover", function () {
+            // Verifica si ya existe el borde
+            let borde = this.querySelector('.link-bottom-border');
+            if (!borde) {
+                borde = document.createElement("div");
+                borde.classList.add("link-bottom-border");
+                this.appendChild(borde);
+
+                // Fuerza un estado inicial para que se registre correctamente la transición
+                requestAnimationFrame(() => {
+                    borde.style.width = "0%"; // Asegura el estado inicial
+                    requestAnimationFrame(() => {
+                        borde.style.width = "100%"; // Activa la transición
+                    });
+                });
+            } else {
+                // Si el borde ya existe, simplemente activa la transición
+                borde.style.width = "100%";
+            }
+        });
+
+        // Al mover el mouse fuera del enlace
+        anchor.addEventListener("mouseout", function () {
+            const borde = this.querySelector('.link-bottom-border');
+            if (borde) {
+                borde.style.width = "0%"; // Activa la transición de salida
+            }
         });
     });
 
@@ -44,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // cambio en la animacion de AOS para pantalla con max-width: 425px
     const cardCurso = document.querySelector(".card-curso");
-    if(window.innerWidth <= 425) {
+    if (window.innerWidth <= 425) {
         cardCurso.setAttribute("data-aos", "anim-fade-down");
     } else {
         cardCurso.setAttribute("data-aos", "anim-fade-left");
