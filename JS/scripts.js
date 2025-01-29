@@ -14,35 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        // Al pasar el mouse sobre el enlace
-        anchor.addEventListener("mouseover", function () {
-            // Verifica si ya existe el borde
-            let borde = this.querySelector('.link-bottom-border');
-            if (!borde) {
-                borde = document.createElement("div");
-                borde.classList.add("link-bottom-border");
-                this.appendChild(borde);
+        const borde = document.createElement("div");
+        borde.classList.add("link-bottom-border");
+        anchor.appendChild(borde);
 
-                // Fuerza un estado inicial para que se registre correctamente la transición
-                requestAnimationFrame(() => {
-                    borde.style.width = "0%"; // Asegura el estado inicial
-                    requestAnimationFrame(() => {
-                        borde.style.width = "100%"; // Activa la transición
-                    });
-                });
-            } else {
-                // Si el borde ya existe, simplemente activa la transición
-                borde.style.width = "100%";
-            }
-        });
+        anchor.addEventListener("mouseover", () => {
+            borde.style.width = "100%";
+        })
+        anchor.addEventListener("mouseout", () => {
+            borde.style.width = "0%";
+        })
 
-        // Al mover el mouse fuera del enlace
-        anchor.addEventListener("mouseout", function () {
-            const borde = this.querySelector('.link-bottom-border');
-            if (borde) {
-                borde.style.width = "0%"; // Activa la transición de salida
-            }
-        });
     });
 
     // Inicializacion AOS
