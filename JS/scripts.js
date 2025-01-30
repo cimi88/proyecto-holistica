@@ -24,8 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
         anchor.addEventListener("mouseout", () => {
             borde.style.width = "0%";
         })
-
     });
+
+    const borde = document.createElement("div");
+    borde.classList.add("link-bottom-border");
+    const linkSede = document.querySelector('a[href^="https"]');
+    linkSede.appendChild(borde);
+    linkSede.addEventListener("mouseover", () => {
+        borde.style.width = "100%";
+    })
+    linkSede.addEventListener("mouseout", () => {
+        borde.style.width = "0%";
+    })
 
     // Inicializacion AOS
     AOS.init({

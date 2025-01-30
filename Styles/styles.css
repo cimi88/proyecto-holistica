@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box !important;
 }
-
 .body {
     background-image: linear-gradient(to bottom, #e91e6222, #e91e6200);
     background: url("../Images/noise.png");
@@ -16,8 +15,10 @@
 
 
 
-/*      navbar      */
 
+
+
+/*      navbar      */
 .navbar {
     background-color: #e91e63;
     font-family: Montserrat, sans-serif;
@@ -28,10 +29,6 @@
 
 .navbar .container-fluid {
     align-items: normal !important;
-}
-
-#navbarNav .navbar-nav {
-    height: 100%;
 }
 
 #navbarNav .navbar-nav {
@@ -83,7 +80,7 @@
 
 
 
-/*      menu sedes      */
+/*      navbar: menu sedes      */
 .navbar .dropdown .btn {
     border: none;
     padding-top: 8px !important;
@@ -119,6 +116,9 @@
 }
 
 @media (max-width: 992px) {
+    #navbarNav .navbar-nav {
+        height: auto !important;
+    }
     #navbarNav .navbar-nav .nav-item {
         padding: 0.5rem 0;
     }
