@@ -541,6 +541,103 @@
 
 
 
+
+
+/* SOBRE MI */
+#quienSoy {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    box-sizing: border-box;
+
+    /* border: 3px solid #000; */
+}
+
+#quienSoy h1 {
+    margin-bottom: 3rem !important;
+}
+
+#quienSoy .card-quienSoy {
+    display: flex;
+    width: 80%;
+    height: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#quienSoy .card-quienSoy .img-cont {
+    height: 100%;
+    flex: 1;
+}
+#quienSoy .card-quienSoy .img-cont .foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#quienSoy .card-quienSoy .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    flex: 1.2;
+    overflow-y: auto;
+
+    /* border: 1px solid red; */
+}
+
+#quienSoy .card-body .card-body-description {
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin: 0 4% 2%;
+}
+
+#quienSoy .card-body .card-body-description ul li {
+    list-style: none;
+}
+
+#quienSoy .card-body h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    color: #e91e63;
+}
+
+#quienSoy .card-body hr {
+    text-align: center;
+    border: 0px !important;
+    border-bottom: 1px solid #000000 !important;
+    width: 60% !important;
+    margin: 8px 0;
+    margin-bottom: 8px;
+}
+
+/* #quienSoy .card-quienSoy > * {
+    border: 1px solid #fd0000;
+} */
+
+@media (max-width: 992px) {
+    #quienSoy .card-quienSoy {
+        flex-direction: column;
+    }
+
+    
+    #quienSoy .card-quienSoy .img-cont {
+        flex: 1;
+    }
+    #quienSoy .card-quienSoy .card-body {
+        flex: 1.5;
+    }
+}
+
+
+
+
+
 /* Contacto */
 #contactame {
     display: flex;
