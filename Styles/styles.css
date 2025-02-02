@@ -740,7 +740,6 @@
 @media (max-width: 576px) {
     #sesiones h1 {
         margin-bottom: 0 !important;
-        /* width: 90%; */
     }
     #sesiones .card-sesion-conteiner .card-sesion {
         flex-direction: column;
