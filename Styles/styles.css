@@ -446,6 +446,13 @@
     /* border: 1px solid black; */
 }
 
+#talleresYCursos .card-taller > *,
+#talleresYCursos .card-curso > * {
+    flex: 1;
+    height: 50%;
+    /* border: 1px solid black; */
+}
+
 #talleresYCursos .card-taller,
 #talleresYCursos .card-curso {
     display: flex;
@@ -462,7 +469,6 @@
 #talleresYCursos .card-taller .img-cont,
 #talleresYCursos .card-curso .img-cont {
     height: 100%;
-    flex: 1;
 }
 #talleresYCursos .card-taller .img-cont .foto,
 #talleresYCursos .card-curso .img-cont .foto {
@@ -486,7 +492,7 @@
     /* border: 1px solid red; */
 }
 
-/* #talleresYCursos .card-taller .card-body > *,
+/* #talleresYCursos .card-body > *,
 #talleresYCursos .card-curso .card-body > * {
     border: 1px solid red;
 } */
@@ -531,6 +537,10 @@
         flex-direction: column;
         height: 800px;
         border-radius: 0 0 8px 8px;
+    }
+    #talleresYCursos .card-taller .img-cont,
+    #talleresYCursos .card-curso .img-cont {
+        height: 50%;
     }
     #talleresYCursos .card-taller .img-cont .foto,
     #talleresYCursos .card-curso .img-cont .foto {
