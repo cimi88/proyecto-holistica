@@ -459,7 +459,6 @@
 #talleresYCursos .card-curso > * {
     flex: 1;
     height: 50%;
-    /* border: 1px solid black; */
 }
 
 #talleresYCursos .card-taller,
@@ -521,6 +520,10 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: 700;
+
+    /* border: 1px solid red; */
 }
 
 #talleresYCursos .card-body hr {
@@ -631,24 +634,25 @@
     border: 1px solid red;
 } */
     
-    #sesiones .card-body .card-body-description {
-        box-sizing: border-box;
-        overflow-y: auto;
-        width: 80%;
-        margin: 0 20px 2%;
+#sesiones .card-sesion-conteiner .card-sesion .card-body .card-body-description {
+    box-sizing: border-box;
+    overflow-y: auto;
+    width: 80%;
+    margin: 0 20px 2%;
 }
 
-#sesiones .card-body .card-body-description ul li {
+#sesiones .card-sesion-conteiner .card-sesion .card-body .card-body-description ul li {
     list-style: none;
 }
 
-#sesiones .card-body h2 {
+#sesiones .card-sesion-conteiner .card-sesion .card-body h2 {
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: clamp(18px, 7vw, 24px);
 }
 
-#sesiones .card-body hr {
+#sesiones .card-sesion-conteiner .card-sesion .card-body hr {
     text-align: center;
     border: 0px !important;
     border-bottom: 1px solid #000000 !important;
@@ -658,7 +662,7 @@
 }
 
 @media (max-width: 768px) {
-    #sesiones .card-body .card-body-description {
+    #sesiones .card-sesion-conteiner .card-sesion .card-body .card-body-description {
         width: 80%;
     }
 }
