@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const navbarHeight = document.getElementById("navbar").offsetHeight; // Altura del navbar
 
             window.scrollTo({
-                top: targetElement.offsetTop - navbarHeight, // Ajustamos el desplazamiento
+                top: targetElement.offsetTop - navbarHeight + 40, // Ajustamos el desplazamiento
                 behavior: "smooth", // Scroll suave
             });
         });
